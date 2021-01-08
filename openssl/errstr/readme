@@ -1,0 +1,14 @@
+用法：
+openssl errstr [-stats] <errno>
+选项：
+-stats
+打印哈希表状态。
+errno
+错误号。
+举例：
+用户输入：
+openssl req -config no.txt
+有如下错误信息：
+2220:error:02001002:system library:
+openssl errstr 02001002
+openssl errstr -stats 02001002
